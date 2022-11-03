@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kırmızı Kedi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="top hide-small">
+        <div class="bar xlarge black opacity hover-opacity-off" id="myNavbar">
+          <a href="#" class="w3-bar-item w3-button">ANASAYFA</a>
+          <a href="#menu" class="w3-bar-item w3-button">MENÜ</a>
+          <a href="#about" class="w3-bar-item w3-button">BİZ KİMİZ</a>
+          <a href="#myMap" class="w3-bar-item w3-button">İLETİŞİM</a>
+        </div>
+      </div>
+      <!-- HEADER KISMI -->
+      <header class="bgimg -display-container w3-grayscale-min" id="home">
+        <div class="display-bottomleft w3-padding">
+          <span class="tag w3-xlarge">Canım ne zaman isterse açıyorum akşam 9'a kadar açığız</span>
+        </div>
+        <div class="display-middle w3-center">
+          <span class="text-yellow w3-hide-small" style="font-size:100px" ><br>KIRMIZI KEDİ PİZZA</span>
+          <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Menü için tıklayınız</a></p>
+        </div>
+      </header>
+      <!-- MENÜ KISMI -->
+      <div class="container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="content">
+        
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">İŞTE MENÜ;</h1>
+          <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Salata');">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salata</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Başlangıç');">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Başlangıç</div>
+            </a>
+          </div>
+      
+          <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Margarita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">40 TL</span></h1>
+            <p class="w3-text-grey">Taze domates, taze mozzarella, taze fesleğen</p>
+            <hr>
+         
+            <h1><b>Bol Peynirli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">50 TL</span></h1>
+            <p class="w3-text-grey">Dört peynir (mozzarella peyniri, parmesan, pecorino, jarlsberg)</p>
+            <hr>
+            
+            <h1><b>Tavuklu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">65 TL</span></h1>
+            <p class="w3-text-grey">Taze domates, mozzarella peyniri, tavuk, soğan</p>
+            <hr>
+            <h1><b>Bol Etli</b> <span class="w3-tag w3-red w3-round">En Çok Satan!</span><span class="w3-right w3-tag w3-dark-grey w3-round">130 TL</span></h1>
+            <p class="w3-text-grey">Taze domates, mozzarella peyniri, acı biber, acı sucuk, dana eti, tavuk</p>
+            <hr>
+      
+          
+        </div>
+      </div>
+      <!-- BİZ KİMİZ KISMI -->
+      <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Hakkımızda</h1>
+          <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p><strong>Şefi Büyük İhtimalle Tanıyorsunuz!</strong> Masterchef Eren Kaşıkçı<img src="https://www.w3schools.com/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+          <p>Kendinizi şımartmak için bugün dükkanımıza uğrayın.</p>
+          <img src="https://pbs.twimg.com/media/EnamoLrXEAErBXy.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+          <h1><b>Çalışma Saatleri</b></h1>
+          
+          <div class="w3-row">
+            <div class="w3-col s6">
+              <p>Cumartesi&Pazar 10:00-23:00</p>
+              <p>Pazartesi 10.00 - 24.00</p>
+              <p>Salı 10:00 - 24:00</p>
+            </div>
+            <div class="w3-col s6">
+              <p>Çarşamba 10:00 - 12:00</p>
+              <p>Perşembe 10:00 - 23:00</p>
+              <p>Cuma 10:00 - 23:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HARİTA KISMI -->
+      <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+      <!-- İletişim Kısmı -->
+      <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">İletişim</h1>
+          <p>Adrese teslim için sipariş hattı:05555555555555555</p>
+          <p class="w3-xxlarge"><strong>Reserve</strong> Önceden yer ayırtmak için buyrun formu doldurun;</p>
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Adınız" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Kaç kişisiniz?" required name="People"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Gün ve Saat" required name="date" value="2020-11-16T20:00"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mesajınız/Özel İsteğiniz" required name="Message"></p>
+            <p><button class="w3-button w3-light-grey w3-block" type="Gönder">İsteği Gönder</button></p>
+          </form>
+        </div>
+      </div>
+      <!-- FOOTER KISMI -->
+      <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+        <p>Powered by <a  title="Yiğit Bilgin" target="_blank" class="w3-hover-text-green">Yiğit Bilgin</a></p>
+      </footer>
+
+      <script>
+        // menü fiyatları
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
